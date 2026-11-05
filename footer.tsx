@@ -1,0 +1,3 @@
+import Link from "next/link";
+import { BUSINESS_PHONE } from "@/lib/format";
+export function Footer() { return <footer className="footer"><div className="container footer-grid"><div><div className="footer-brand">H&A Collection</div><p>Thoughtfully handmade bags and beautiful bedsheets for everyday living.</p></div><div><b>Explore</b><Link href="/shop">Shop all</Link><Link href="/about">Our story</Link><Link href="/contact">Contact us</Link></div><div><b>Visit or call</b><span>{BUSINESS_PHONE}</span><span>Rikkos New Layout, Jos North LGA,<br/>Plateau State, Nigeria.</span></div></div><div className="container copyright">© {new Date().getFullYear()} H&A Collection. All rights reserved.</div></footer>; }
